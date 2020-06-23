@@ -153,10 +153,6 @@ h2 {
 	z-index: 3;
 }
 
-.about-title {
-	margin-left: 64%;
-}
-
 .about-text {
 	color: #fff;
 	background-color: rgb(255, 199, 64);
@@ -294,6 +290,7 @@ h2 {
 	 font-weight: bold;
 	 padding: 90px 0;
 	 position: relative;
+	 margin-bottom: 150px;
 }
 
 .contacts::before {
