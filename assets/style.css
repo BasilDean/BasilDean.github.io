@@ -1,6 +1,9 @@
 body {
 	background-color: white;
-	font-style: 
+	max-width: 1200px;
+	justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h2 {
