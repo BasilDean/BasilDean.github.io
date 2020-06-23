@@ -1,257 +1,289 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Optional CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <title>Гидролифт - аренда и ремонт автовышек.</title>
-  </head>
-  <body>
-    <header class="header container">
-      <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="navbar-brand d-flex">
+  <!-- Optional CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+
+  <title>Гидролифт - аренда и ремонт автовышек.</title>
+</head>
+
+<body>
+  <header class="header container">
+    <div class="row">
+      <div class="col-md-4 d-flex">
         <div class="img-logo">
           <img src="assets/img/logo.png">
         </div>
         <div class="links">
-          <a class="telLink" href="tel:88005555555">8 800 555 55 55</a><br>
-          <p class="callMeBack">Заказать <a href="#">Обратный звонок</a></p>
+          <a class="telLink-logo" href="tel:88005555555">8 800 555 55 55</a><br>
+          <p class="callMeBack-logo">Заказать <a href="#">Обратный звонок</a></p>
         </div>
       </div>
-      <div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="list-unstyled  nav-list">
-            <li class="nav-item">
-              <a class="nav-link" href="#">о нас</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">аренда</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">ремонт</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">контакты</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">новости</a>
-            </li>
-          </ul>
-        </div>
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav-list list-unstyled d-flex flex-wrap justify-content-around">
+              <li class="nav-item">
+                <a class="nav-link" href="#">о нас</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">аренда <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ремонт</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">контакты</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">новости</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-</nav>
-    </header>
-    <body>
-      <h1 class="sr-only">Гидролифт - главная страница</h1>
+    </div>
+  </header>
 
-      <div class="container-fluid promo">
+  <body>
+    <h1 class="sr-only">Гидролифт - главная страница</h1>
+
+    <div class="container promo">
+      <div class="row">
         <div class="promo-text">
-          <p class="text-center">АРЕНДА И РЕМОНТ</p>
-          <p class="text-center">АВТОВЫШЕК</p>
+          <p class="text-center">АРЕНДА И РЕМОНТ<br>
+          АВТОВЫШЕК</p>
         </div>
       </div>
+    </div>
 
-      <section class="container-fluid mt-5 lease">
-        <h2 class="text-center">Аренда</h2>
-        <ul class="filter mx-auto list-unstyled d-flex flex-wrap">
-          <li class="active text-center"><a href="#" class="filter-item" id="filter-all">Все<br>вышки</a></li>
-          <li><a href="#" class="filter-item">12м</a></li>
-          <li><a href="#" class="filter-item">16м</a></li>
-          <li><a href="#" class="filter-item">18м</a></li>
-          <li class="active"><a href="#" class="filter-item">20м</a></li>
-          <li><a href="#" class="filter-item">25м</a></li>
-          <li><a href="#" class="filter-item">28м</a></li>
-          <li><a href="#" class="filter-item">32м</a></li>
-          <li><a href="#" class="filter-item">38м</a></li>
-          <li><a href="#" class="filter-item">45м</a></li>
-          <li><a href="#" class="filter-item">60м</a></li>
-        </ul>
-        <div class="elevators-list d-flex justify-content-between flex-wrap mx-5">
-          <div class="elevator-item">
-            <h3 class="elevator-title active"><a href="#">Автовышка ISUZU<br>20 метров</a></h3>
-            <p>Тип автовышки: Телескопическая</p>
-            <p>Грузоподъемность: 300 кг</p>
-            <p>Цена за час: 800 р</p>
-            <p>Цена за смену (8 ч): 6400 р</p>
-            <img src="assets/img/elevator-small.png">
-            <div class="text-right buttons">
-              <a href="#" class="order-button">ЗАКАЗАТЬ</a>
-              <a href="#" class="more-info">Подробнее</a>
-            </div>
-          </div>
-
-          <div class="elevator-item">
-            <h3 class="elevator-title">Автовышка ISUZU <br>20 метров</h3>
-            <p>Тип автовышки: Телескопическая</p>
-            <p>Грузоподъемность: 300 кг</p>
-            <p>Цена за час: 800 р</p>
-            <p>Цена за смену (8 ч): 6400 р</p>
-            <img src="assets/img/elevator-small.png">
-            <div class="text-right buttons">
-              <a href="#" class="order-button">ЗАКАЗАТЬ</a>
-              <a href="#" class="more-info">Подробнее</a>
-            </div>
-          </div>
-
-          <div class="elevator-item">
-            <h3 class="elevator-title">Автовышка ISUZU <br>20 метров</h3>
-            <p>Тип автовышки: Телескопическая</p>
-            <p>Грузоподъемность: 300 кг</p>
-            <p>Цена за час: 800 р</p>
-            <p>Цена за смену (8 ч): 6400 р</p>
-            <img src="assets/img/elevator-small.png">
-            <div class="text-right buttons">
-              <a href="#" class="order-button">ЗАКАЗАТЬ</a>
-              <a href="#" class="more-info">Подробнее</a>
-            </div>
-          </div>
-
-          <div class="elevator-item">
-            <h3 class="elevator-title">Автовышка ISUZU <br>20 метров</h3>
-            <p>Тип автовышки: Телескопическая</p>
-            <p>Грузоподъемность: 300 кг</p>
-            <p>Цена за час: 800 р</p>
-            <p>Цена за смену (8 ч): 6400 р</p>
-            <img src="assets/img/elevator-small.png">
-            <div class="text-right buttons">
-              <a href="#" class="order-button">ЗАКАЗАТЬ</a>
-              <a href="#" class="more-info">Подробнее</a>
-            </div>
-          </div>
-
-          <div class="elevator-item">
-            <h3 class="elevator-title">Автовышка ISUZU <br>20 метров</h3>
-            <p>Тип автовышки: Телескопическая</p>
-            <p>Грузоподъемность: 300 кг</p>
-            <p>Цена за час: 800 р</p>
-            <p>Цена за смену (8 ч): 6400 р</p>
-            <img src="assets/img/elevator-small.png">
-            <div class="text-right buttons">
-              <a href="#" class="order-button">ЗАКАЗАТЬ</a>
-              <a href="#" class="more-info">Подробнее</a>
-            </div>
-          </div>
-
-          <div class="elevator-item">
-            <h3 class="elevator-title">Автовышка ISUZU <br>20 метров</h3>
-            <p>Тип автовышки: Телескопическая</p>
-            <p>Грузоподъемность: 300 кг</p>
-            <p>Цена за час: 800 р</p>
-            <p>Цена за смену (8 ч): 6400 р</p>
-            <img src="assets/img/elevator-small.png">
-            <div class="text-right buttons">
-              <a href="#" class="order-button">ЗАКАЗАТЬ</a>
-              <a href="#" class="more-info">Подробнее</a>
-            </div>
+    <section class="container mt-5 lease">
+      <h2 class="text-center">Аренда</h2>
+      <ul class="filter mx-auto list-unstyled d-flex justify-content-around">
+        <li class="active text-right"><a href="#" class="filter-item" id="filter-all">Все вышки</a></li>
+        <li><a href="#" class="filter-item">12м</a></li>
+        <li><a href="#" class="filter-item">16м</a></li>
+        <li><a href="#" class="filter-item">18м</a></li>
+        <li class="active"><a href="#" class="filter-item">20м</a></li>
+        <li><a href="#" class="filter-item">25м</a></li>
+        <li><a href="#" class="filter-item">28м</a></li>
+        <li><a href="#" class="filter-item">32м</a></li>
+        <li><a href="#" class="filter-item">38м</a></li>
+        <li><a href="#" class="filter-item">45м</a></li>
+        <li><a href="#" class="filter-item">60м</a></li>
+      </ul>
+      <div class="elevators-list d-flex justify-content-between flex-wrap mx-5">
+        <div class="elevator-item">
+          <h3 class="elevator-title active"><a href="#">Автовышка ISUZU<br>20 метров</a></h3>
+          <p>Тип автовышки: Телескопическая</p>
+          <p>Грузоподъемность: 300 кг</p>
+          <p>Цена за час: 800 р</p>
+          <p>Цена за смену (8 ч): 6400 р</p>
+          <img src="assets/img/elevator-item.png">
+          <div class="text-right buttons">
+            <a href="#" class="order-button">ЗАКАЗАТЬ</a>
+            <a href="#" class="more-info">Подробнее</a>
           </div>
         </div>
-        <p class="text-center"><a href="#" class="show-all"><u>посмотреть все автовышки</u></a></p>
-      </section>
 
-      <section class="about container-fluid">
-        <h2 class="about-title text-center">О нас</h2>
+        <div class="elevator-item">
+          <h3 class="elevator-title">Автовышка ISUZU <br>20 метров</h3>
+          <p>Тип автовышки: Телескопическая</p>
+          <p>Грузоподъемность: 300 кг</p>
+          <p>Цена за час: 800 р</p>
+          <p>Цена за смену (8 ч): 6400 р</p>
+          <img src="assets/img/elevator-item.png">
+          <div class="text-right buttons">
+            <a href="#" class="order-button">ЗАКАЗАТЬ</a>
+            <a href="#" class="more-info">Подробнее</a>
+          </div>
+        </div>
+
+        <div class="elevator-item">
+          <h3 class="elevator-title">Автовышка ISUZU <br>20 метров</h3>
+          <p>Тип автовышки: Телескопическая</p>
+          <p>Грузоподъемность: 300 кг</p>
+          <p>Цена за час: 800 р</p>
+          <p>Цена за смену (8 ч): 6400 р</p>
+          <img src="assets/img/elevator-item.png">
+          <div class="text-right buttons">
+            <a href="#" class="order-button">ЗАКАЗАТЬ</a>
+            <a href="#" class="more-info">Подробнее</a>
+          </div>
+        </div>
+
+        <div class="elevator-item">
+          <h3 class="elevator-title">Автовышка ISUZU <br>20 метров</h3>
+          <p>Тип автовышки: Телескопическая</p>
+          <p>Грузоподъемность: 300 кг</p>
+          <p>Цена за час: 800 р</p>
+          <p>Цена за смену (8 ч): 6400 р</p>
+          <img src="assets/img/elevator-item.png">
+          <div class="text-right buttons">
+            <a href="#" class="order-button">ЗАКАЗАТЬ</a>
+            <a href="#" class="more-info">Подробнее</a>
+          </div>
+        </div>
+
+        <div class="elevator-item">
+          <h3 class="elevator-title">Автовышка ISUZU <br>20 метров</h3>
+          <p>Тип автовышки: Телескопическая</p>
+          <p>Грузоподъемность: 300 кг</p>
+          <p>Цена за час: 800 р</p>
+          <p>Цена за смену (8 ч): 6400 р</p>
+          <img src="assets/img/elevator-item.png">
+          <div class="text-right buttons">
+            <a href="#" class="order-button">ЗАКАЗАТЬ</a>
+            <a href="#" class="more-info">Подробнее</a>
+          </div>
+        </div>
+
+        <div class="elevator-item">
+          <h3 class="elevator-title">Автовышка ISUZU <br>20 метров</h3>
+          <p>Тип автовышки: Телескопическая</p>
+          <p>Грузоподъемность: 300 кг</p>
+          <p>Цена за час: 800 р</p>
+          <p>Цена за смену (8 ч): 6400 р</p>
+          <img src="assets/img/elevator-item.png">
+          <div class="text-right buttons">
+            <a href="#" class="order-button">ЗАКАЗАТЬ</a>
+            <a href="#" class="more-info">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <p class="text-center"><a href="#" class="show-all"><u>посмотреть все автовышки</u></a></p>
+    </section>
+
+    <section class="about container float-left">
+      <div class="row">
+        <h2 class="about-title">О нас</h2>
         <div class="about-text">
-          <p>Наша компания предлагает услуги по <strong>аренде автогидроподъемников</strong> в Москве и Подмосковье, а также мы <strong>производим ремонт грузоподъемной техники</strong>. У нас имеется собственный автопарк, с собственной авторемонтной базой, поэтому наши машины всегда находятся в исправном состоянии, <strong>с высококвалифицированными операторами-машинистами</strong>.</p>
+          <p>Наша компания предлагает услуги по <strong>аренде автогидроподъемников</strong> в Москве и Подмосковье, а
+            также мы <strong>производим ремонт грузоподъемной техники</strong>. У нас имеется собственный автопарк, с
+            собственной авторемонтной базой, поэтому наши машины всегда находятся в исправном состоянии, <strong>с
+              высококвалифицированными операторами-машинистами</strong>.</p>
         </div>
       </section>
+      </div>
+    <div class="clearfix"></div>
 
-      <section class="features container-fluid">
-        <div class="features-pic-list d-flex flex-wrap">
-          <div id="day-and-night" class="feature-pic-item col-lg-5 col-md-12"><p class="text-center">Круглосуточная<br>работа 24/7</p></div>
-          <div id="quality" class="feature-pic-item col-lg-5 col-md-12"><p>Качественное<br>обслуживание</p></div>
-          <div id="autopark" class="feature-pic-item col-lg-5 col-md-12"><p class="text-center">Собственный автопарк,<br>техника не старше 5 лет</p></div>
-          <div id="convenience" class="feature-pic-item col-lg-5 col-md-12"><p>Удобное расположение<br>автобазы</p></div>
+    <section class="features container-fluid">
+      <div class="features-pic-list d-flex flex-wrap">
+        <div id="day-and-night" class="feature-pic-item col-lg-6 col-md-12">
+          <div class="feature-pic-image"></div>
+          <p class="text-center">Круглосуточная<br>работа 24/7</p>
         </div>
-        <div class="features-text-list d-flex justify-content-around">
-          <div class="features-text-item features-text-repair text-center">Наличие собственного<br>техцентра, техника<br>всегда исправна</div>
-          <div class="features-text-item features-text-fast text-center">Своевременная подача<br>техники до 1 часа</div>
-          <div class="features-text-item features-text-sale text-center">Уникальная система<br>бонусов и скидок<br>для постоянных клиентов</div>
+        <div id="quality" class="feature-pic-item col-lg-6 col-md-12">
+          <p>Качественное<br>обслуживание</p>
         </div>
+        <div id="autopark" class="feature-pic-item col-lg-6 col-md-12">
+          <p class="text-right">Собственный автопарк,<br>техника не старше 5 лет</p>
+        </div>
+        <div id="convenience" class="feature-pic-item col-lg-6 col-md-12">
+          <p>Удобное расположение<br>автобазы</p>
+        </div>
+      </div>
+      <div class="features-text-list d-flex justify-content-around">
+        <div class="features-text-item features-text-repair text-center">Наличие собственного<br>техцентра,
+          техника<br>всегда исправна</div>
+        <div class="features-text-item features-text-fast text-center">Своевременная подача<br>техники до 1 часа</div>
+        <div class="features-text-item features-text-sale text-center">Уникальная система<br>бонусов и скидок<br>для
+          постоянных клиентов</div>
+      </div>
+    </section>
+
+    <section class="container-fluid contacts d-flex flex-wrap justify-content-center">
+      <section class="our-contacts text-center">
+        <h4>Контактная информация</h4>
+        <p>E-mail: <a href="mailto:7224134@mail.ru">7224134@mail.ru</a></p>
+        <p>Солнечногорский проезд, д. 4А, Москва, 125413</p>
+        <p>Часы работы: круглосуточно</p>
+        <p>Посмотреть <a href="#">на карте</a></p>
       </section>
 
-      <section class="container-fluid order d-flex flex-wrap justify-content-around">
-        <section class="contacts text-center">
-          <h4>Контактная информация</h4>
-          <p>E-mail:  <a href="mailto:7224134@mail.ru">7224134@mail.ru</a></p>
-          <p>Солнечногорский проезд, д. 4А, Москва, 125413</p>
-          <p>Часы работы: круглосуточно</p>
-          <p>Посмотреть <a href="#">на карте</a></p>
-        </section>
-
-        <section class="callMe text-center">
-          <h2 class="sr-only">Заказать звонок</h2>
-          <p>Позвоните нам</p>
-          <p><a href="tel:8 800 555 55 55">8 800 555 55 55</a></p>
-          <p>или</p>
-          <p>Оставьте заявку,  и мы перезвоним Вам,  работаем круглосуточно</p>
-          <form class="contact-us">
-            <div>
-              <input class="form-input" type="email" name="email" placeholder="Ваше имя">
-            </div>
-            <div>
-              <input class="form-input" type="tel" name="tel" placeholder="Ваш телефон">
-            </div>
-            <button type="submit" class="form-button">ЗАКАЗАТЬ</button>
-          </form>
-        </section>
+      <section class="callMe text-center">
+        <h2 class="sr-only">Заказать звонок</h2>
+        <p>Позвоните нам</p>
+        <p><a href="tel:8 800 555 55 55">8 800 555 55 55</a></p>
+        <p>или</p>
+        <p>Оставьте заявку, и мы перезвоним Вам, работаем круглосуточно</p>
+        <form class="contact-us">
+          <div>
+            <input class="form-input" type="email" name="email" placeholder="Ваше имя">
+          </div>
+          <div>
+            <input class="form-input" type="tel" name="tel" placeholder="Ваш телефон">
+          </div>
+          <button type="submit" class="form-button">ЗАКАЗАТЬ</button>
+        </form>
       </section>
+    </section>
 
-      <section class="container-fluid news">
-        <h2>Выполненные работы</h2>
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active d-flex">
-              <div class="carousel-img-description col-lg-6 col-12">
-              <p><strong>Ремонт освещения</strong></p>
-              <data>12.05.2018</data>
-              Автовышка HYUNDAI<br>20 метров
+    <section class="container-fluid gallery">
+      <div class="gray-back">
+        <div class="container">
+          <div class="row">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active d-flex justify-content-around">
+                  <p>
+                    <strong>Ремонт освещения</strong><br>
+                    <time datetime="2018-05-12">12.05.2018</time><br>
+                    Автовышка HYUNDAI 20 метров
+                  </p>
+                  <img class="d-block" src="assets/img/avtovishka.png" alt="First slide">
+                </div>
               </div>
-              <img class=" col-lg-6 col-12" src="assets/img/avtovishka.png" class="d-block" alt="Автовышка в работе">
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
         </div>
-      </section>
-    </body>
+      </div>
+    </section>
 
-    <footer class="container-fluid">
-      <div class="nav-footer d-flex">
-        <div class="logo">
-          <img src="assets/img/logo-footer.png">
+  </body>
+
+  <footer class="container-fluid">
+    <div class="footer-back">
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-md-3">
+          <div class="img-logo-footer">
+            <img src="assets/img/logo-footer.png">
+          </div>
         </div>
-        <div class="contacts">
-          <p>Телефон: <a href="tel:89251926790">8 (925) 192 67 90</a></p>
-          <p>E-mail: <a href="mailto:7224134@mail.ru">7224134@mail.ru</a></p>
+        <div class="col-md-3">
+          <div class="footer-links">
+            <p>Телефон: <a href="tel:89251926790">8 (925) 192 67 90</a></p>
+            <p>E-mail: <a href="mailto:7224134@mail.ru">7224134@mail.ru</a></p>
+          </div>
         </div>
-        <div>
-          <ul class="nav-list-footer list-unstyled d-flex">
+        <div class="col-md-3">
+          <ul class="nav-list list-unstyled d-flex flex-wrap justify-content-around">
             <li class="nav-item">
               <a class="nav-link" href="#">о нас</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">аренда</a>
+              <a class="nav-link" href="#">аренда <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">ремонт</a>
@@ -267,21 +299,76 @@
       </div>
       <div class="social">
         <ul class="d-flex justify-content-center list-unstyled">
-          <li class="ml-5"><a href="#"><img src="assets/img/VK.com-logo.svg" alt=""><span class="sr-only">instagram</span></a></li>
-          <li class="ml-5"><a href="#"><img src="assets/img/insta.svg" alt=""><span class="sr-only">vkontakte</span></a></li>
+          <li class="ml-5"><a href="#"><img src="assets/img/VK.com-logo.svg" alt=""><span
+                class="sr-only">instagram</span></a></li>
+          <li class="ml-5"><a href="#"><img src="assets/img/insta.svg" alt=""><span class="sr-only">vkontakte</span></a>
+          </li>
         </ul>
       </div>
-    </footer>
+    </div>
+  </footer>
 
+  <!-- < class="container-fluid">
+    <div class="footer-back">
+      <div class="row">
+        <div class="nav-footer d-flex justify-content-center">
+          <div class="logo">
+            <img src="assets/img/logo-footer.png">
+            <div class="footer-links">
+              <p>Телефон: <a href="tel:89251926790">8 (925) 192 67 90</a></p>
+              <p>E-mail: <a href="mailto:7224134@mail.ru">7224134@mail.ru</a></p>
+            </div>
+            <div>
+              <ul class="nav-list-footer list-unstyled d-flex flex-wrap">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">о нас</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">аренда</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ремонт</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">контакты</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">новости</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="social">
+        <ul class="d-flex justify-content-center list-unstyled">
+          <li class="ml-5"><a href="#"><img src="assets/img/VK.com-logo.svg" alt=""><span
+                class="sr-only">instagram</span></a></li>
+          <li class="ml-5"><a href="#"><img src="assets/img/insta.svg" alt=""><span class="sr-only">vkontakte</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
     
-
-
-
-    <!-- Optional JavaScript -->
     
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  </body>
+  </> -->
+
+
+
+
+
+  <!-- Optional JavaScript -->
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

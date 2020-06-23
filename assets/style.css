@@ -5,32 +5,32 @@ body {
 
 h2 {
 	color: rgb(255, 199, 64);
-	font-size: 5vw;
+	font-size: 40px;
 }
+
+.container {
+	max-width: 1400px;
+}
+
+
 
 .img-logo img {
-	width: 10vw;
+	
 }
 
-.telLink {
+.telLink-logo {
 	color: rgb(255, 199, 64);
-	font-size: 3vw;
+	font-size: 38px;
 	font-weight: bold;
 }
 
 .nav-list {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	flex-wrap: wrap;
-	margin-left: 15vw;
+	font-size: 30px;
 }
 
 .nav-link {
 	color: rgb(166, 166, 166);
-	font-size: 2vw;
+	
 }
 
 .active a{
@@ -39,12 +39,12 @@ h2 {
 	margin-right: 4px;
 }
 
-.callMeBack, .callMeBack a {
+.callMeBack-logo, .callMeBack-logo a {
 	color: rgb(166, 166, 166);
-	font-size: 2vw;
 }
 
-.callMeBack a {
+.callMeBack-logo a {
+	font-size: 22px;
 	font-weight: bold;
 	text-decoration: underline;
 }
@@ -55,11 +55,7 @@ h2 {
 
 .links::after {
 	content: "";
-	width: 5vw;
-	height: 8vh;
 	position: absolute;
-	top: 1vh;
-	right: -2vw;
 	background-image: url(img/24to7.png);
 	background-repeat: no-repeat;
 }
@@ -69,40 +65,41 @@ h2 {
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
     background-size: contain;
-    padding-top: 42%;
+    padding-top: 50%;
     position: relative;
 }
 
 .promo-text {
+	font-size: 72px;
+	line-height: 80px;
 	font-weight: bold;
-	margin: 0 30%;
 	position: absolute;
-	top: 56%;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .promo-text p {
-	font-size: 3vw;
-	padding: 0;
-	margin: 0;
 	color: white;
-	line-height: 3vw;
 	background-color: rgba(255, 199, 64, 1);
 }
 
+.filter {
+	max-width: 850px;
+}
+
 .filter-item {
-	font-size: 3vw;
 	color: rgb(166, 166, 166);
-	margin-right: 2vw;
+	font-size: 30px;
 }
 
 #filter-all {
-	font-size: 2vw;
-	padding: 5px;
+	font-size: 18px;
+	line-height: 14px;
 }
 
 .elevator-item {
-	padding: 1vw 2vh;
-	margin-bottom: 5vh;
+	padding: 15px 10px 15px 0;
 }
 
 .elevator-item:hover,
@@ -112,12 +109,10 @@ h2 {
 }
 
 .elevator-item img {
-	width: 25vw;
 }
 
 .elevator-title {
 	color: rgba(255, 199, 64, 1);
-	font-size: 3vh;
 }
 
 .order-button {
@@ -138,72 +133,113 @@ h2 {
 .show-all {
 	margin: 0;
 	color: rgb(166, 166, 166);
-	font-size: 1.5vw;
 }
 
 .about {
 	position: relative;
-}
-
-.about-title {
-
+	z-index: 2;
 }
 
 .about::after {
 	content: "";
 	position: absolute;
-	background-image: url(img/elev-back.png);
+	background-image: url(img/psevdo-vishka.png);
 	background-repeat: no-repeat;
 	background-size: contain;
-	width: 65vh;
-	height: 65vw;
-	top: 1vh;
-	right: 10vw;
+	width: 740px;
+	height: 530px;
+	top: -15%;
+	right: -35%;
+	z-index: 3;
+}
+
+.about-title {
+	margin-left: 64%;
 }
 
 .about-text {
+	color: #fff;
+	background-color: rgb(255, 199, 64);
+	position: relative;
+	padding-left: 27%;
+	padding-right: 12%;
+	font-size: 22px;
+	line-height: 30px;
+}
+
+.about-text::after {
+	content: "";
 	background: url(img/texturefabrik_dust-01.png);
+	background-position: 50% 50%;
+	opacity: 0.3;
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 72%;
-	min-height: 27vh;
-	padding-bottom: 1vh
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
 }
 
 .about-text p {
-	padding-top: 5vh;
-	margin-left: 20vw;
-	margin-right: 10vw;
-	max-width: 57vw;
 	color: white;
+	position: relative;
+	z-index: 2;
 }
 
 .features {
 	font-weight: bold;
+	margin-top: 90px;
+	margin-bottom: 50px;
 }
 
 .feature-pic-item {
 	background-repeat: no-repeat;
-	background-size: contain;
-	padding-bottom: 5%;
-	font-size: 2vw;
+	position: relative;
+	background-size: auto;
+	padding-top: 10%;
 	color: white;
+	width: 50%;
+	height: auto;
+	z-index: 2;
+}
+
+.feature-pic-item::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 1;
+	transition: all .5s ease;
+}
+
+.feature-pic-item:hover::after {
+	opacity: 0;
 }
 
 #day-and-night {
-	background-image: url(img/shutterstock_718591090.png);
+	background-image: url(img/features-back-dayandnight.jpg);
+	background-position: 50% 55%;
 }
 
 #quality {
-	background-image: url(img/shutterstock_1061659583.png);
+	background-image: url(img/features-back-quality.jpg);
+	background-position: 50% 80%;
 }
 
 #autopark {
-	background-image: url(img/shutterstock_271338044.png);
+	background-image: url(img/features-back-autopark.jpg);
+	background-position: 20% 40%;
 }
 
 #convenience {
-	background-image: url(img/shutterstock_43906648.png);
+	background-image: url(img/features-back-convenience.jpg);
+	background-position: 50% 30%;
 }
 
 #day-and-night p,
@@ -211,63 +247,115 @@ h2 {
 #autopark p,
 #convenience p {
 	padding-top: 5%;
-}
-
-#autopark p {
-	padding-right: 10vw;
+	font-size: 40px;
+	line-height: 45px;
 }
 
 .features-text-list {
 	color: rgb(166, 166, 166);
-	font-size: 1vw;
+	margin-top: 80px;
 }
 
 .features-text-item {
 	position: relative;
-	margin-top: 10vw;
 }
 
 .features-text-item::before {
 	content: "";
 	position: absolute;
+	top: -65%;
+	left: 40%;
 	background-repeat: no-repeat;
-	width: 5vw;
-	height: 8vh;
-	top: -5vw;
-	left: 5vw;
+	background-position: 50% 50%;
 }
 
 .features-text-repair::before {
 	background-image: url(img/repair.png);
+	width: 44px;
+	height: 45px;
 }
 
 .features-text-fast::before {
 	background-image: url(img/fast_icon.png);
+	width: 86px;
+	height: 45px;
 }
 
 .features-text-sale::before {
 	background-image: url(img/sale_icon.png);
+	width: 45px;
+	height: 46px;
 }
 
-.order {
-	margin-top: 10vh;
-	background-image: url(img/contacts_back.png);
+.contacts {
+	background-color: rgb(255, 200, 70);
 	background-repeat: no-repeat;
-	padding-top: 10vh;
-	padding-bottom: 5vh;
 	color: white;
- 	font-weight: bold;
+	 font-weight: bold;
+	 padding: 90px 0;
+	 position: relative;
 }
 
-.order a {
+.contacts::before {
+	content: "";
+	background-image: url(img/contacts_back.jpg);
+	background-position: 50% 10%;
+	opacity: 0.1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.contacts::after {
+	content: "";
+	background: url(img/texturefabrik_dust-01.png);
+	background-position: 50% 50%;
+	opacity: 0.3;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.contacts section {
+	position: relative;
+	z-index: 2;
+}
+
+.contacts a {
 	color: white;
+}
+
+.our-contacts {
+	position: relative;
+}
+
+.our-contacts::after {
+	content: "";
+	position: absolute;
+	background-image: url(img/psevdo-vishka2.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 740px;
+	height: 530px;
+	top: -15%;
+	left: -133%;
+	z-index: 3;
 }
 
  .form-input {
  	background-color: transparent;
  	border-radius: 50px;
  	border: 1px solid white;
- 	margin-bottom: 1vh;
  	font-weight: bold;
  }
 
@@ -282,7 +370,6 @@ h2 {
 	color: rgba(255, 199, 64, 1);
  	border-radius: 50px;
  	border: 1px solid white;
- 	padding: 1vh 5vw;
  	font-weight: bold;
 }
 
@@ -292,43 +379,16 @@ h2 {
  }
 
 .contact-us {
-	padding-bottom: 2vh;
-}
-
-.carousel-img-description {
-	margin-top: 30vh;
 }
 
 .nav-list-footer {
 	color: white;
-	flex-wrap: wrap;
 }
 
 
 footer {
+	margin-top: 130px;
 	background-color: rgba(255, 199, 64, 1);
+	padding-bottom: 5px;
 }
 
-@media only screen and (max-width: 768px) {
-
-	.about-text p {
-		padding-top: 15vh;
-	}
-
-	.about::after {
-		display: none;
-	}
-
-	.links::after {
-		display: none;
-	}
-
-	.about-text {
-	width: 100%;
-	}
-
-	.about-text p {
-	padding-top: 10vh;
-	}
-
-}
