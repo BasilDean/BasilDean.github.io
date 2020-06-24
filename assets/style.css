@@ -1,6 +1,8 @@
 body {
 	background-color: white;
-	font-style: 
+	font-style: ;
+	width: device-width;
+	overflow-x: hidden;
 }
 
 h2 {
@@ -65,6 +67,11 @@ h2 {
 	right: -20%;
 }
 
+.elevator {
+	position: relative;
+	
+}
+
 .promo {
 	background-image: url(img/elevator.png);
 	background-position: 50% 50%;
@@ -72,6 +79,7 @@ h2 {
     background-size: contain;
     padding-top: 50%;
     position: relative;
+    z-index: 2;
 }
 
 .promo-text {
@@ -81,8 +89,35 @@ h2 {
 	position: absolute;
 	top: 70%;
 	left: 50%;
+    z-index: 2;
 	transform: translate(-50%, -50%);
 }
+
+.back-yellow {
+	position: absolute;
+	transform: rotate(-3deg);
+	z-index: 1;
+	background-color: rgb(255, 199, 64);
+	top: 25%;
+	left: -5%;
+	right: -5%;
+	bottom: 15%;
+}
+
+ .back-yellow::after {
+	content: "";
+	background: url(img/texturefabrik_dust-01.png);
+	background-position: 50% 50%;
+	opacity: 0.2;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+	position: absolute;
+	top: 0%;
+	left: 0;
+	right: 0;
+	bottom: 0%;
+} 
 
 .promo-text p {
 	color: white;
@@ -113,7 +148,9 @@ h2 {
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-.elevator-item img {
+.elevator-item-img {
+	position: relative;
+	z-index: 2;
 }
 
 .elevator-title {
@@ -154,7 +191,7 @@ h2 {
 	width: 740px;
 	height: 530px;
 	top: -15%;
-	right: -35%;
+	right: -40%;
 	z-index: 3;
 }
 
@@ -164,6 +201,8 @@ h2 {
 	position: relative;
 	padding-left: 27%;
 	padding-right: 12%;
+	padding-top: 15px;
+	padding-bottom: 10px;
 	font-size: 22px;
 	line-height: 30px;
 }
@@ -187,6 +226,11 @@ h2 {
 	color: white;
 	position: relative;
 	z-index: 2;
+	transform: rotate(1deg);
+}
+
+.rotate {
+	transform: rotate(-1deg);
 }
 
 .features {
@@ -200,10 +244,11 @@ h2 {
 	position: relative;
 	background-size: cover;
 	padding-top: 21%;
+	margin-bottom: 10px;
 	color: white;
 	width: 50%;
 	height: auto;
-	z-index: 2;
+	z-index: 1;
 }
 
 .feature-pic-item::after {
@@ -325,7 +370,7 @@ h2 {
 	 margin-bottom: 150px;
 }
 
-.contacts::before {
+.dust {
 	content: "";
 	background-image: url(img/contacts_back.jpg);
 	background-position: 50% 10%;
@@ -340,7 +385,7 @@ h2 {
 	bottom: 0;
 }
 
-.contacts::after {
+.contacts-back {
 	content: "";
 	background: url(img/texturefabrik_dust-01.png);
 	background-position: 50% 50%;
@@ -368,7 +413,7 @@ h2 {
 	position: relative;
 }
 
-.our-contacts::after {
+.contacts::after {
 	content: "";
 	position: absolute;
 	background-image: url(img/psevdo-vishka2.png);
@@ -377,9 +422,10 @@ h2 {
 	width: 740px;
 	height: 530px;
 	top: -15%;
-	left: -133%;
+	left: -10%;
 	z-index: 3;
 }
+
 
  .form-input {
  	background-color: transparent;
@@ -408,22 +454,133 @@ h2 {
 .contact-us {
 }
 
-.gallery {
+.gallery-slider {
 	padding-bottom: 140px;
-}
-
-.gray-back {
+	position: relative;
 	background-color: gray;
-	opacity: 0.2;
 }
 
- .news-back {
+ .gallery-slider::after {
+ 	content: "";
  	background-image: url(img/news-back.jpg);
  	background-repeat: no-repeat;
  	background-size: cover;
- 	height: 20vw;
- 	opacity: 0.2;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+ 	opacity: 0.1;
+ 	z-index: 1;
  }
+
+ .slider {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* стили для обёртки, в которой заключены слайды */
+.slider__wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+/* стили для контейнера слайдов */
+.slider__items {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+/* стили для слайдов */
+.slider__item {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* стили для кнопок "вперед" и "назад" */
+.slider__control {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  height: 50px;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.slider__control:hover,
+.slider__control:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: 0.9;
+}
+
+.slider__control_prev {
+  left: 0;
+}
+
+.slider__control_next {
+  right: 0;
+}
+
+.slider__control::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.slider__control_prev::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control_next::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/* стили для индикаторов */
+.slider__indicators {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin: 0 15%;
+  list-style: none;
+}
+
+.slider__indicators li {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 4px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.slider__indicators li.active {
+  background-color: #fff;
+}
 
 
 footer {
@@ -431,7 +588,8 @@ footer {
 	background-color: rgba(255, 199, 64, 1);
 	padding-bottom: 5px;
 	position: relative;
-	
+	width: 105%;
+	height: 105%;
 }
 
 .footer-back {
@@ -466,6 +624,7 @@ footer {
 
 .footer-back>div {
 	position: relative;
+	transform: rotate(1deg);
 	z-index: 2;
 }
 
