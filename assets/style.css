@@ -678,6 +678,17 @@ footer {
 	padding-bottom: 10px;
 }
 
+.elevator-item-modal {
+	padding: 10px;
+}
+
+.modal-back {
+	background-color: rgb(255, 199, 64);
+	height: 160px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
 
 /* xs (<=543px) */
 @media (max-width: 575px) {
