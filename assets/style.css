@@ -12,10 +12,10 @@ h2 {
 	max-width: 1400px;
 }
 
-
-
-.img-logo img {
-	
+.container-fluid {
+	width: 100%;
+	padding: 0;
+	margin: 0;
 }
 
 .telLink-logo {
@@ -41,16 +41,17 @@ h2 {
 
 .callMeBack-logo, .callMeBack-logo a {
 	color: rgb(166, 166, 166);
+	font-size: 22px;
 }
 
 .callMeBack-logo a {
-	font-size: 22px;
-	font-weight: bold;
 	text-decoration: underline;
 }
 
 .links {
 	position: relative;
+	line-height: 0.8;
+	margin: 15px;
 }
 
 .links::after {
@@ -58,6 +59,10 @@ h2 {
 	position: absolute;
 	background-image: url(img/24to7.png);
 	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+	top: 5%;
+	right: -20%;
 }
 
 .promo {
@@ -162,7 +167,6 @@ h2 {
 	font-size: 22px;
 	line-height: 30px;
 }
-
 .about-text::after {
 	content: "";
 	background: url(img/texturefabrik_dust-01.png);
@@ -194,8 +198,8 @@ h2 {
 .feature-pic-item {
 	background-repeat: no-repeat;
 	position: relative;
-	background-size: auto;
-	padding-top: 10%;
+	background-size: cover;
+	padding-top: 21%;
 	color: white;
 	width: 50%;
 	height: auto;
@@ -218,9 +222,19 @@ h2 {
 	opacity: 0;
 }
 
+.feature-pic-item p {
+	position: absolute;
+}
+
 #day-and-night {
 	background-image: url(img/features-back-dayandnight.jpg);
 	background-position: 50% 55%;
+}
+
+#day-and-night p {
+	top: 0%;
+	right: 20%;
+	text-align: left;
 }
 
 #quality {
@@ -228,14 +242,27 @@ h2 {
 	background-position: 50% 80%;
 }
 
+#quality p {
+	bottom: 0%;
+}
+
 #autopark {
 	background-image: url(img/features-back-autopark.jpg);
 	background-position: 20% 40%;
 }
 
+#autopark p {
+	top: 0%;
+	left: 0%;
+}
+
 #convenience {
 	background-image: url(img/features-back-convenience.jpg);
 	background-position: 50% 30%;
+}
+
+#convenience p {
+	bottom: 0%;
 }
 
 #day-and-night p,
@@ -245,6 +272,7 @@ h2 {
 	padding-top: 5%;
 	font-size: 40px;
 	line-height: 45px;
+	z-index: 3;
 }
 
 .features-text-list {
@@ -259,8 +287,6 @@ h2 {
 .features-text-item::before {
 	content: "";
 	position: absolute;
-	top: -65%;
-	left: 40%;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 }
@@ -269,18 +295,24 @@ h2 {
 	background-image: url(img/repair.png);
 	width: 44px;
 	height: 45px;
+	top: -65%;
+	left: 45%;
 }
 
 .features-text-fast::before {
 	background-image: url(img/fast_icon.png);
 	width: 86px;
 	height: 45px;
+	top: -65%;
+	left: 40%;
 }
 
 .features-text-sale::before {
 	background-image: url(img/sale_icon.png);
 	width: 45px;
 	height: 46px;
+	top: -65%;
+	left: 45%;
 }
 
 .contacts {
@@ -353,19 +385,16 @@ h2 {
  	background-color: transparent;
  	border-radius: 50px;
  	border: 1px solid white;
- 	font-weight: bold;
- }
-
- .slide {
- 	background-image: url(img/slider-back.png);
- 	background-repeat: no-repeat;
- 	background-size: cover;
+ 	font-size: 25px;
+ 	margin-bottom: 15px;
  }
 
 .form-button {
 	background: white;
 	color: rgba(255, 199, 64, 1);
  	border-radius: 50px;
+ 	font-size: 25px;
+ 	padding: 2px 70px;
  	border: 1px solid white;
  	font-weight: bold;
 }
@@ -373,19 +402,194 @@ h2 {
  input::placeholder {
  	color: white;
  	text-align: center;
+ 	font-weight: bold;
  }
 
 .contact-us {
 }
 
-.nav-list-footer {
-	color: white;
+.gallery {
+	padding-bottom: 140px;
 }
+
+.gray-back {
+	background-color: gray;
+	opacity: 0.2;
+}
+
+ .news-back {
+ 	background-image: url(img/news-back.jpg);
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	height: 20vw;
+ 	opacity: 0.2;
+ }
 
 
 footer {
 	margin-top: 130px;
 	background-color: rgba(255, 199, 64, 1);
 	padding-bottom: 5px;
+	position: relative;
+	
 }
 
+.footer-back {
+	padding-top: 80px;
+}
+
+.footer-back::after {
+	content: "";
+	background-image: url(img/texturefabrik_dust-01.png);
+	opacity: 0.2;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+
+
+.footer-back>div {
+	position: relative;
+	z-index: 2;
+}
+
+.footer-links, .footer-links a {
+	color: white;
+	font-size: 20px;
+	line-height: 15px;
+
+}
+
+.nav-list-footer a {
+	color: white;
+	font-size: 20px;
+}
+
+.nav-list-footer>.active a {
+	background-color: white;
+	color: rgb(255, 199, 64);
+}
+
+.social {
+	padding-bottom: 10px;
+}
+
+
+/* xs (<=543px) */
+@media (max-width: 575px) {
+	.links::after {
+		display: none;
+	}
+
+	.promo-text {
+		font-size: 20px;
+		line-height: 20px;
+	}
+
+	.about::after {
+		display: none;
+	}
+
+	.about-text {
+		padding-left: 5px;
+		padding-right: 5px;
+		font-size: 22px;
+		line-height: 30px;
+	}
+
+	.our-contacts::after {
+		display: none;
+	}
+
+	.telLink-logo {
+	font-size: 25px;
+	}
+
+	.nav-list {
+		font-size: 25px;
+	}
+
+	.callMeBack-logo, .callMeBack-logo a {
+		font-size: 15px;
+	}
+
+	.elevators-list {
+		margin: 0;
+	}
+
+	.feature-pic-item {
+		margin-bottom: 5px;
+	}
+
+	#day-and-night p,
+	#quality p,
+	#autopark p,
+	#convenience p {
+		padding-top: 5%;
+		font-size: 14px;
+		line-height: 14px;
+		z-index: 3;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.features-text-item::before {
+		top: 10%;
+		left: -3%;
+	}
+}
+ 
+/* sm (>=576 и <=767) */
+@media (min-width: 576px) and (max-width: 767px) {
+	.links::after {
+		display: none;
+	}
+
+	.promo-text {
+		font-size: 20px;
+		line-height: 20px;
+	}
+
+	.about::after {
+		display: none;
+	}
+
+	.our-contacts::after {
+		display: none;
+	}
+}
+ 
+/* md (>=768 и <=991) */
+@media (min-width: 768px) and (max-width: 991px) {
+	.links::after {
+		display: none;
+	}
+
+	.promo-text {
+		font-size: 40px;
+		line-height: 40px;
+	}
+
+	.about::after {
+		display: none;
+	}
+
+	.our-contacts::after {
+		display: none;
+	}
+}
+ 
+/* lg (>=992 и <=1199) */
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+
+	.promo-text {
+		font-size: 50px;
+		line-height: 60px;
+	}
+}

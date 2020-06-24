@@ -19,17 +19,17 @@
 <body>
   <header class="header container">
     <div class="row">
-      <div class="col-md-4 d-flex">
+      <div class="col-lg-4 col-12 d-flex">
         <div class="img-logo">
           <img src="assets/img/logo.png">
         </div>
         <div class="links">
           <a class="telLink-logo" href="tel:88005555555">8 800 555 55 55</a><br>
-          <p class="callMeBack-logo">Заказать <a href="#">Обратный звонок</a></p>
+          <p class="callMeBack-logo pl-2">Заказать <a href="#">обратный звонок</a></p>
         </div>
       </div>
-      <div class="col-md-4"></div>
-      <div class="col-md-4">
+      <div class="col-lg-4"></div>
+      <div class="col-lg-4 col-12">
         <nav class="navbar navbar-expand-lg navbar-light">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -37,19 +37,19 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="nav-list list-unstyled d-flex flex-wrap justify-content-around">
               <li class="nav-item">
-                <a class="nav-link" href="#">о нас</a>
+                <a class="nav-link" href="#about">о нас</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="#">аренда <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#lease">аренда <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">ремонт</a>
+                <a class="nav-link" href="#repair">ремонт</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">контакты</a>
+                <a class="nav-link" href="#contacts">контакты</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">новости</a>
+                <a class="nav-link" href="#news">новости</a>
               </li>
             </ul>
           </div>
@@ -59,7 +59,7 @@
   </header>
 
   <body>
-    <h1 class="sr-only">Гидролифт - главная страница</h1>
+    <h1 class="sr-only">Гидролифт - аренда и ремонт автовышек</h1>
 
     <div class="container promo">
       <div class="row">
@@ -71,8 +71,8 @@
     </div>
 
     <section class="container mt-5 lease">
-      <h2 class="text-center">Аренда</h2>
-      <ul class="filter mx-auto list-unstyled d-flex justify-content-around">
+      <h2 id="lease" class="text-center">Аренда</h2>
+      <ul class="filter mx-auto list-unstyled d-flex flex-wrap justify-content-around">
         <li class="active text-right"><a href="#" class="filter-item" id="filter-all">Все вышки</a></li>
         <li><a href="#" class="filter-item">12м</a></li>
         <li><a href="#" class="filter-item">16м</a></li>
@@ -85,7 +85,7 @@
         <li><a href="#" class="filter-item">45м</a></li>
         <li><a href="#" class="filter-item">60м</a></li>
       </ul>
-      <div class="elevators-list d-flex justify-content-between flex-wrap mx-5">
+      <div class="elevators-list d-flex justify-content-between flex-wrap center-block">
         <div class="elevator-item">
           <h3 class="elevator-title active"><a href="#">Автовышка ISUZU<br>20 метров</a></h3>
           <p>Тип автовышки: Телескопическая</p>
@@ -168,7 +168,7 @@
     </section>
 
     <section class="about container float-left">
-      <h2 class="about-title text-center">О нас</h2>
+      <h2 id="about" class="about-title text-center">О нас</h2>
       <div class="row">
         <div class="about-text">
           <p>Наша компания предлагает услуги по <strong>аренде автогидроподъемников</strong> в Москве и Подмосковье, а
@@ -176,46 +176,54 @@
             собственной авторемонтной базой, поэтому наши машины всегда находятся в исправном состоянии, <strong>с
               высококвалифицированными операторами-машинистами</strong>.</p>
         </div>
-      </section>
       </div>
+  	</section>
     <div class="clearfix"></div>
 
     <section class="features container-fluid">
       <div class="features-pic-list d-flex flex-wrap">
-        <div id="day-and-night" class="feature-pic-item col-lg-6 col-md-12">
-          <div class="feature-pic-image"></div>
-          <p class="text-center">Круглосуточная<br>работа 24/7</p>
+        <div id="day-and-night" class="feature-pic-item col-lg-6 col-12">
+          <p class="text-left">Круглосуточная<br>работа 24/7</p>
         </div>
-        <div id="quality" class="feature-pic-item col-lg-6 col-md-12">
-          <p>Качественное<br>обслуживание</p>
+        <div id="quality" class="feature-pic-item col-lg-6 col-12">
+          <p class="text-left">Качественное<br>обслуживание</p>
         </div>
-        <div id="autopark" class="feature-pic-item col-lg-6 col-md-12">
-          <p class="text-right">Собственный автопарк,<br>техника не старше 5 лет</p>
+        <div id="autopark" class="feature-pic-item col-lg-6 col-12">
+          <p class="text-left">Собственный автопарк,<br>техника не старше 5 лет</p>
         </div>
-        <div id="convenience" class="feature-pic-item col-lg-6 col-md-12">
-          <p>Удобное расположение<br>автобазы</p>
+        <div id="convenience" class="feature-pic-item col-lg-6 col-12">
+          <p class="text-left">Удобное расположение<br>автобазы</p>
         </div>
       </div>
-      <div class="features-text-list d-flex justify-content-around">
-        <div class="features-text-item features-text-repair text-center">Наличие собственного<br>техцентра,
-          техника<br>всегда исправна</div>
-        <div class="features-text-item features-text-fast text-center">Своевременная подача<br>техники до 1 часа</div>
-        <div class="features-text-item features-text-sale text-center">Уникальная система<br>бонусов и скидок<br>для
-          постоянных клиентов</div>
+      <div class="container features-text-list d-flex flex-wrap">
+        <div class="features-text-item features-text-repair text-center col-md-4 col-12">
+        	<p class="text-center">Наличие собственного<br>техцентра,
+          техника<br>
+          всегда исправна</p>
+  		</div>
+        <div class="features-text-item features-text-fast text-center col-md-4 col-12">
+        	<p class="text-center">Своевременная подача<br>техники до 1 часа</p>
+    	</div>
+        <div class="features-text-item features-text-sale text-center col-md-4 col-12">
+        	<p class="text-center">Уникальная система<br>бонусов и скидок<br>для
+          постоянных клиентов</p>
+      	</div>
       </div>
     </section>
 
     <section class="container-fluid contacts d-flex flex-wrap justify-content-center">
+    	<h2 id="contacts" class="sr-only">Наши контакты</h2>
       <section class="our-contacts text-center">
         <h4>Контактная информация</h4>
         <p>E-mail: <a href="mailto:7224134@mail.ru">7224134@mail.ru</a></p>
-        <p>Солнечногорский проезд, д. 4А, Москва, 125413</p>
+        <p>Солнечногорский проезд, д. 4А,<br>
+        Москва, 125413</p>
         <p>Часы работы: круглосуточно</p>
         <p>Посмотреть <a href="#">на карте</a></p>
       </section>
 
       <section class="callMe text-center">
-        <h2 class="sr-only">Заказать звонок</h2>
+        <h2 id="repair" class="sr-only">Заказать звонок</h2>
         <p>Позвоните нам</p>
         <p><a href="tel:8 800 555 55 55">8 800 555 55 55</a></p>
         <p>или</p>
@@ -233,31 +241,14 @@
     </section>
 
     <section class="container-fluid gallery">
-      <h2 class="text-center">Выполненные работы</h2>
+      <h2 id="news" class="text-center">Выполненные работы</h2>
       <div class="gray-back">
-        <div class="container">
-          <div class="row">
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active d-flex justify-content-around">
-                  <p>
-                    <strong>Ремонт освещения</strong><br>
-                    <time datetime="2018-05-12">12.05.2018</time><br>
-                    Автовышка HYUNDAI 20 метров
-                  </p>
-                  <img class="d-block" src="assets/img/avtovishka.png" alt="First slide">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
+        <div class="news-back">
+        	<div class="container">
+        		<div class="row">
+        			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio eligendi ratione quam, optio expedita deserunt temporibus explicabo repudiandae ipsam distinctio?
+        		</div>
+        	</div>
         </div>
       </div>
     </section>
@@ -279,31 +270,34 @@
           </div>
         </div>
         <div class="col-md-3">
-          <ul class="nav-list list-unstyled d-flex flex-wrap justify-content-around">
+          <ul class="nav-list-footer list-unstyled d-flex flex-wrap justify-content-around">
             <li class="nav-item">
-              <a class="nav-link" href="#">о нас</a>
+              <a class="nav-link" href="#about">о нас</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">аренда <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#lease">аренда</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">ремонт</a>
+              <a class="nav-link" href="#repair">ремонт</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">контакты</a>
+              <a class="nav-link" href="#contacts">контакты</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">новости</a>
+              <a class="nav-link" href="#news">новости</a>
             </li>
           </ul>
         </div>
       </div>
       <div class="social">
         <ul class="d-flex justify-content-center list-unstyled">
-          <li class="ml-5"><a href="#"><img src="assets/img/VK.com-logo.svg" alt=""><span
-                class="sr-only">instagram</span></a></li>
-          <li class="ml-5"><a href="#"><img src="assets/img/insta.svg" alt=""><span class="sr-only">vkontakte</span></a>
+          <li>
+          	<a href="#"><img src="assets/img/insta.svg" alt=""><span class="sr-only">vkontakte</span></a>
           </li>
+          <li class="ml-2">
+          	<a href="#"><img src="assets/img/VK.com-logo.svg" alt=""><span
+                class="sr-only">instagram</span></a>
+            </li>
         </ul>
       </div>
     </div>
