@@ -110,6 +110,15 @@ h2 {
 	font-size: 40px;
 }
 
+a  {
+	color: rgb(255, 199, 64);
+}
+
+a:hover,
+a:active {
+	color: rgb(255, 199, 64);
+}
+
 .container {
 	max-width: 1400px;
 }
@@ -251,27 +260,6 @@ h2 {
 	font-size: 30px;
 }
 
-/* .promo-text p {
-	color: white;
-	background-color: rgba(255, 199, 64, 1);
-	position: relative;
-	z-index: 1;
-}
-
-.promo-text p::after {
-	background: inherit;
-	bottom: 0;
-	content: '';
-	display: block;
-	height: 100%;
-	left: -10%;
-	position: absolute;
-	right: -10%;
-	transform: skewX(-45deg);
-	transform-origin: 100%;
-	z-index: -1;
-} */
-
 #filter-all p {
 	background-color: rgba(255, 199, 64, 1);
 	margin: 0;
@@ -312,14 +300,18 @@ h2 {
 	background-position: 50% 85%;
 	transform: rotate(-2deg);
 	top: 10%;
-	bottom: 7%;
+	bottom: 15%;
 	right: 0;
 	left: 0;
 }
 
 .elevator-item {
 	padding: 15px 10px 15px 0;
+	position: relative;
 	z-index: 2;
+	padding: 15px;
+	max-width: 350px;
+	height: 500px;
 }
 
 .elevator-item:hover,
@@ -328,13 +320,22 @@ h2 {
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-.elevator-item-img {
+.elevator-item img {
 	position: relative;
 	z-index: 2;
+	max-width: 100%;
+	max-height: 200px;
+	margin-bottom: 5px;
 }
 
 .elevator-title {
 	color: rgba(255, 199, 64, 1);
+}
+
+.buttons {
+	position: absolute;
+	bottom: 15px;
+	right: 0;
 }
 
 .order-button {
@@ -440,7 +441,7 @@ h2 {
 	position: relative;
 	background-size: cover;
 	padding-top: 21%;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	color: white;
 	width: 50%;
 	height: auto;
@@ -492,6 +493,7 @@ h2 {
 #autopark {
 	background-image: url(img/features-back-autopark.jpg);
 	background-position: 20% 40%;
+	margin-bottom: 0;
 }
 
 #autopark p {
@@ -502,6 +504,7 @@ h2 {
 #convenience {
 	background-image: url(img/features-back-convenience.jpg);
 	background-position: 50% 30%;
+	margin-bottom: 0;
 }
 
 #convenience p {
@@ -572,6 +575,7 @@ h2 {
 	background-color: white;
 	color: rgb(255, 200, 70) !important;
 	text-decoration: underline;
+	padding: 5px;
 	z-index: 2;
 }
 
@@ -657,11 +661,16 @@ h2 {
  }
 
 .gallery-slider {
+	margin-top: 10px;
+	padding-top: 20px;
 	position: relative;
 	background-color: rgba(237, 237, 237, 1);
 	margin-bottom: 20px;
 	transform: rotate(-1deg);
+	border-top: 25px solid rgb(255, 199, 64);
 }
+
+
 
  .gallery-slider::after {
  	content: "";
@@ -790,7 +799,7 @@ footer {
 		line-height: 20px;
 	}
 
-	.filter-item,  {
+	.filter-item  {
 		font-size: 16px;
 	}
 
@@ -939,11 +948,7 @@ footer {
 	.elevators-row {
 		max-width: 740px;
 	}
-
-	.buttons {
-		vertical-align: left;
-	}
-
+	
 	.wrapper-elevator-list::after {
 		display: none;
 	}
