@@ -866,7 +866,7 @@ footer {
 @media (min-width: 576px) and (max-width: 767px) {
 	
 	.elevators-row {
-		max-width: 740px;
+		max-width: 440px;
 	}
 
 	.links::after {
@@ -913,7 +913,7 @@ footer {
 @media (min-width: 768px) and (max-width: 991px) {
 	
 	.elevators-row {
-		max-width: 740px;
+		max-width: 440px;
 	}
 
 	.links::after {
@@ -946,7 +946,7 @@ footer {
 @media (min-width: 992px) and (max-width: 1199px) {
 	
 	.elevators-row {
-		max-width: 740px;
+		max-width: 440px;
 	}
 	
 	.wrapper-elevator-list::after {
