@@ -572,6 +572,7 @@ h2 {
 	background-color: white;
 	color: rgb(255, 200, 70) !important;
 	text-decoration: underline;
+	padding: 5px;
 	z-index: 2;
 }
 
