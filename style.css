@@ -1,0 +1,955 @@
+@font-face {
+			font-family: "GothamProRegular";
+			src: url("fonts/GothamProRegular/GothamProRegular.eot");
+			src: url("fonts/GothamProRegular/GothamProRegular.eot?#iefix")format("embedded-opentype"),
+			url("fonts/GothamProRegular/GothamProRegular.woff") format("woff"),
+			url("fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "GothamProBold";
+			src: url("fonts/GothamProBold/GothamProBold.eot");
+			src: url("fonts/GothamProBold/GothamProBold.eot?#iefix")format("embedded-opentype"),
+			url("fonts/GothamProBold/GothamProBold.woff") format("woff"),
+			url("fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "GothamProBlack";
+			src: url("fonts/GothamProBlack/GothamProBlack.eot");
+			src: url("fonts/GothamProBlack/GothamProBlack.eot?#iefix")format("embedded-opentype"),
+			url("fonts/GothamProBlack/GothamProBlack.woff") format("woff"),
+			url("fonts/GothamProBlack/GothamProBlack.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "GothamProItalic";
+			src: url("fonts/GothamProItalic/GothamProItalic.eot");
+			src: url("fonts/GothamProItalic/GothamProItalic.eot?#iefix")format("embedded-opentype"),
+			url("fonts/GothamProItalic/GothamProItalic.woff") format("woff"),
+			url("fonts/GothamProItalic/GothamProItalic.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "GothamProMedium";
+			src: url("fonts/GothamProMedium/GothamProMedium.eot");
+			src: url("fonts/GothamProMedium/GothamProMedium.eot?#iefix")format("embedded-opentype"),
+			url("fonts/GothamProMedium/GothamProMedium.woff") format("woff"),
+			url("fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "GothamProLight";
+			src: url("fonts/GothamProLight/GothamProLight.eot");
+			src: url("fonts/GothamProLight/GothamProLight.eot?#iefix")format("embedded-opentype"),
+			url("fonts/GothamProLight/GothamProLight.woff") format("woff"),
+			url("fonts/GothamProLight/GothamProLight.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "GothamProMediumItalic";
+			src: url("fonts/GothamProMediumItalic/GothamProMediumItalic.eot");
+			src: url("fonts/GothamProMediumItalic/GothamProMediumItalic.eot?#iefix")format("embedded-opentype"),
+			url("fonts/GothamProMediumItalic/GothamProMediumItalic.woff") format("woff"),
+			url("fonts/GothamProMediumItalic/GothamProMediumItalic.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "GothamProLightItalic";
+			src: url("fonts/GothamProLightItalic/GothamProLightItalic.eot");
+			src: url("fonts/GothamProLightItalic/GothamProLightItalic.eot?#iefix")format("embedded-opentype"),
+			url("fonts/GothamProLightItalic/GothamProLightItalic.woff") format("woff"),
+			url("fonts/GothamProLightItalic/GothamProLightItalic.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "GothamProBoldItalic";
+			src: url("fonts/GothamProBoldItalic/GothamProBoldItalic.eot");
+			src: url("fonts/GothamProBoldItalic/GothamProBoldItalic.eot?#iefix")format("embedded-opentype"),
+			url("fonts/GothamProBoldItalic/GothamProBoldItalic.woff") format("woff"),
+			url("fonts/GothamProBoldItalic/GothamProBoldItalic.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "GothamProBlackItalic";
+			src: url("fonts/GothamProBlackItalic/GothamProBlackItalic.eot");
+			src: url("fonts/GothamProBlackItalic/GothamProBlackItalic.eot?#iefix")format("embedded-opentype"),
+			url("fonts/GothamProBlackItalic/GothamProBlackItalic.woff") format("woff"),
+			url("fonts/GothamProBlackItalic/GothamProBlackItalic.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+body {
+	background-color: white;
+	width: device-width;
+	overflow-x: hidden;
+	font-family: "GothamProRegular";
+}
+
+h2 {
+	color: rgb(255, 199, 64);
+	font-size: 40px;
+}
+
+.container {
+	max-width: 1400px;
+}
+
+.container-fluid {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.telLink-logo {
+	color: rgb(255, 199, 64);
+	font-size: 38px;
+	font-weight: bold;
+	font-family: "GothamProBlack";
+}
+
+.nav-list {
+	font-size: 30px;
+}
+
+.nav-link {
+	color: rgb(166, 166, 166);
+	
+}
+
+.active a{
+	color: white;
+	background-color: rgb(255, 194, 64);
+	margin-right: 4px;
+}
+
+.callMeBack-logo, .callMeBack-logo a {
+	color: rgb(166, 166, 166);
+	font-size: 22px;
+}
+
+.callMeBack-logo a {
+	text-decoration: underline;
+}
+
+.links {
+	position: relative;
+	line-height: 0.8;
+	margin: 15px;
+}
+
+.links::after {
+	content: "";
+	position: absolute;
+	background-image: url(img/24to7.png);
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+	top: 5%;
+	right: -20%;
+}
+
+.elevator {
+	position: relative;
+	
+}
+
+.promo {
+	background-image: url(img/elevator.png);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 50%;
+    position: relative;
+    z-index: 2;
+}
+
+.promo-text {
+	font-size: 68px;
+	line-height: 90px;
+	font-weight: bold;
+	position: absolute;
+	top: 70%;
+	left: 50%;
+    z-index: 2;
+	transform: translate(-50%, -50%);
+	font-family: "GothamProBold";
+}
+
+.back-yellow {
+	position: absolute;
+	transform: rotate(-3deg);
+	z-index: 1;
+	background-color: rgb(255, 199, 64);
+	top: 25%;
+	left: -5%;
+	right: -5%;
+	bottom: 15%;
+}
+
+ .back-yellow::after {
+	content: "";
+	background: url(img/texturefabrik_dust-01.png);
+	background-position: 50% 50%;
+	opacity: 0.2;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+	position: absolute;
+	top: 0%;
+	left: 0;
+	right: 0;
+	bottom: 0%;
+} 
+
+.promo-text p {
+	color: white;
+	background-color: rgba(255, 199, 64, 1);
+	position: relative;
+	z-index: 1;
+}
+
+.promo-text p::after {
+	background: inherit;
+	bottom: 0;
+	content: '';
+	display: block;
+	height: 100%;
+	left: -10%;
+	position: absolute;
+	right: -10%;
+	transform: skewX(-45deg);
+	transform-origin: 100%;
+	z-index: -1;
+}
+
+.filter {
+	max-width: 850px;
+}
+
+.filter-item {
+	color: rgb(166, 166, 166);
+	font-size: 30px;
+}
+
+/* .promo-text p {
+	color: white;
+	background-color: rgba(255, 199, 64, 1);
+	position: relative;
+	z-index: 1;
+}
+
+.promo-text p::after {
+	background: inherit;
+	bottom: 0;
+	content: '';
+	display: block;
+	height: 100%;
+	left: -10%;
+	position: absolute;
+	right: -10%;
+	transform: skewX(-45deg);
+	transform-origin: 100%;
+	z-index: -1;
+} */
+
+#filter-all p {
+	background-color: rgba(255, 199, 64, 1);
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	line-height: 14px;
+	position: relative;
+	z-index: 1;
+	padding: 10px;
+}
+
+#filter-all p::after {
+	background: inherit;
+	bottom: 0;
+	content: '';
+	display: block;
+	height: 100%;
+	left: -10%;
+	position: absolute;
+	right: 30%;
+	transform: skewX(-15deg);
+	transform-origin: 100%;
+	z-index: -1;
+}
+
+.wrapper-elevator-list {
+	position: relative;
+	width: 100%;
+}
+
+.wrapper-elevator-list::after {
+	content: "";
+	z-index: 1;
+	position: absolute;
+	background-image: linear-gradient(transparent 60%, rgba(255, 199, 64, 1) 40%);
+  	background-size: 100% 50%;
+	background-repeat: no-repeat;
+	background-position: 50% 85%;
+	transform: rotate(-2deg);
+	top: 10%;
+	bottom: 7%;
+	right: 0;
+	left: 0;
+}
+
+.elevator-item {
+	padding: 15px 10px 15px 0;
+	z-index: 2;
+}
+
+.elevator-item:hover,
+.elevator-item:active,
+.elevator-item:focus {
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.elevator-item-img {
+	position: relative;
+	z-index: 2;
+}
+
+.elevator-title {
+	color: rgba(255, 199, 64, 1);
+}
+
+.order-button {
+	background-color: rgba(255, 199, 64, 1);
+	padding: 5px 20px;
+	border: solid 1px rgba(255, 199, 64, 1);
+	border-radius: 50px;
+	color: white;
+	font-weight: bold;
+}
+
+.more-info:hover,
+.more-info:active,
+.more-info:focus {
+	color: rgba(255, 199, 64, 1);
+}
+
+.show-all {
+	margin: 0;
+	color: rgb(166, 166, 166);
+}
+
+.about {
+	position: relative;
+	z-index: 2;
+}
+
+.about::after {
+	content: "";
+	position: absolute;
+	background-image: url(img/psevdo-vishka.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 740px;
+	height: 530px;
+	top: -15%;
+	right: -40%;
+	z-index: 1;
+}
+
+.about-text {
+	color: #fff;
+	background-color: rgb(255, 199, 64);
+	position: relative;
+	padding-left: 27%;
+	padding-right: 12%;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	font-size: 22px;
+	line-height: 30px;
+}
+.about-text::after {
+	content: "";
+	background: url(img/texturefabrik_dust-01.png);
+	background-position: 50% 50%;
+	opacity: 0.3;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+}
+
+.about-text p {
+	color: white;
+	position: relative;
+	z-index: 2;
+	transform: rotate(1deg);
+}
+
+.rotate {
+	transform: rotate(-1deg);
+}
+
+.features {
+	font-weight: bold;
+	margin-top: 90px;
+	margin-bottom: 50px;
+}
+
+.features-pic-list {
+	background-color: rgb(255, 199, 64);
+	position: relative;
+}
+
+.features-pic-list::after {
+	content: "";
+	background-image: url(img/texturefabrik_dust-01.png);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0.2;
+}
+
+.feature-pic-item {
+	background-repeat: no-repeat;
+	position: relative;
+	background-size: cover;
+	padding-top: 21%;
+	margin-bottom: 10px;
+	color: white;
+	width: 50%;
+	height: auto;
+	z-index: 1;
+}
+
+.feature-pic-item::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 1;
+	transition: all .5s ease;
+}
+
+.feature-pic-item:hover::after {
+	opacity: 0;
+}
+
+.feature-pic-item p {
+	position: absolute;
+	font-family: "GothamProBold";
+	font-weight: bold;
+}
+
+#day-and-night {
+	background-image: url(img/features-back-dayandnight.jpg);
+	background-position: 50% 55%;
+}
+
+#day-and-night p {
+	top: 0%;
+	right: 20%;
+	text-align: left;
+}
+
+#quality {
+	background-image: url(img/features-back-quality.jpg);
+	background-position: 50% 80%;
+}
+
+#quality p {
+	bottom: 0%;
+}
+
+#autopark {
+	background-image: url(img/features-back-autopark.jpg);
+	background-position: 20% 40%;
+}
+
+#autopark p {
+	top: 0%;
+	left: 0%;
+}
+
+#convenience {
+	background-image: url(img/features-back-convenience.jpg);
+	background-position: 50% 30%;
+}
+
+#convenience p {
+	bottom: 0%;
+}
+
+#day-and-night p,
+#quality p,
+#autopark p,
+#convenience p {
+	padding-top: 5%;
+	font-size: 40px;
+	line-height: 45px;
+	z-index: 3;
+}
+
+.features-text-list {
+	color: rgb(166, 166, 166);
+	margin-top: 80px;
+}
+
+.features-text-item {
+	position: relative;
+}
+
+.features-text-item::before {
+	content: "";
+	position: absolute;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.features-text-repair::before {
+	background-image: url(img/repair.png);
+	width: 44px;
+	height: 45px;
+	top: -65%;
+	left: 45%;
+}
+
+.features-text-fast::before {
+	background-image: url(img/fast_icon.png);
+	width: 86px;
+	height: 45px;
+	top: -65%;
+	left: 40%;
+}
+
+.features-text-sale::before {
+	background-image: url(img/sale_icon.png);
+	width: 45px;
+	height: 46px;
+	top: -65%;
+	left: 45%;
+}
+
+.contacts {
+	background-color: rgb(255, 200, 70);
+	background-repeat: no-repeat;
+	color: white;
+	 font-weight: bold;
+	 padding: 90px 0;
+	 position: relative;
+	 margin-bottom: 150px;
+}
+
+.on-map {
+	background-color: white;
+	color: rgb(255, 200, 70) !important;
+	text-decoration: underline;
+	z-index: 2;
+}
+
+.dust {
+	content: "";
+	background-image: url(img/contacts_back.jpg);
+	background-position: 50% 10%;
+	opacity: 0.1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.contacts-back {
+	content: "";
+	background: url(img/texturefabrik_dust-01.png);
+	background-position: 50% 50%;
+	opacity: 0.3;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.contacts section {
+	position: relative;
+	z-index: 2;
+}
+
+.contacts a {
+	color: white;
+}
+
+.our-contacts {
+	position: relative;
+}
+
+.contacts::after {
+	content: "";
+	position: absolute;
+	background-image: url(img/psevdo-vishka2.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 740px;
+	height: 530px;
+	bottom: -30%;
+	left: 0%;
+	z-index: 1;
+}
+
+
+ .form-input {
+ 	background-color: transparent;
+ 	border-radius: 50px;
+ 	border: 1px solid white;
+ 	font-size: 25px;
+ 	margin-bottom: 15px;
+ }
+
+.form-button {
+	background: white;
+	color: rgba(255, 199, 64, 1);
+ 	border-radius: 50px;
+ 	font-size: 25px;
+ 	padding: 2px 70px;
+ 	border: 1px solid white;
+ 	font-weight: bold;
+}
+
+ input::placeholder {
+ 	color: white;
+ 	text-align: center;
+ 	font-weight: bold;
+ }
+
+.gallery-slider {
+	position: relative;
+	background-color: rgba(237, 237, 237, 1);
+	margin-bottom: 20px;
+	transform: rotate(-1deg);
+}
+
+ .gallery-slider::after {
+ 	content: "";
+ 	background-image: url(img/news-back.jpg);
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+ 	opacity: 0.1;
+ 	z-index: 1;
+ }
+
+ .carousel-desc {
+ 	transform: rotate(1deg);
+ 	font-size: 25px;
+ 	line-height: 36px;
+ 	color: rgb(166, 166, 166);
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	
+ }
+
+ .carousel-control {
+ 	z-index: 2;
+ }
+
+
+footer {
+	margin-top: 130px;
+	background-color: rgba(255, 199, 64, 1);
+	padding-bottom: 5px;
+	position: relative;
+	width: 105%;
+	height: 105%;
+}
+
+.footer-back {
+	padding-top: 80px;
+}
+
+.footer-back::before {
+	content: "";
+	background-image: url(img/footer-back.jpg);
+	opacity: 0.1;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.footer-back::after {
+	content: "";
+	background-image: url(img/texturefabrik_dust-01.png);
+	opacity: 0.2;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+
+
+.footer-back>div {
+	position: relative;
+	transform: rotate(1deg);
+	z-index: 2;
+}
+
+.footer-links, .footer-links a {
+	color: white;
+	font-size: 20px;
+	line-height: 15px;
+
+}
+
+.nav-list-footer a {
+	color: white;
+	font-size: 20px;
+}
+
+.nav-list-footer>.active a {
+	background-color: white;
+	color: rgb(255, 199, 64);
+}
+
+.social {
+	padding-bottom: 10px;
+}
+
+.elevator-item-modal {
+	padding: 10px;
+}
+
+.modal-back {
+	background-color: rgb(255, 199, 64);
+	height: 160px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+
+/* xs (<=543px) */
+@media (max-width: 575px) {
+
+	* {
+		font-size: 16px;
+	}
+
+	.img-logo img {
+		width: 50px;
+	}
+
+	.links::after {
+		display: none;
+	}
+
+	.promo-text {
+		font-size: 20px;
+		line-height: 20px;
+	}
+
+	.filter-item,  {
+		font-size: 16px;
+	}
+
+	.wrapper-elevator-list::after {
+		display: none;
+	}
+
+	.about::after {
+		display: none;
+	}
+
+	.contacts::after {
+		display: none;
+	}
+
+	.about-text {
+		padding-left: 5px;
+		padding-right: 5px;
+		font-size: 22px;
+		line-height: 30px;
+	}
+
+	.our-contacts::after {
+		display: none;
+	}
+
+	.telLink-logo, 
+	.footer-links p {
+	font-size: 15px;
+	}
+
+	.nav-list {
+		font-size: 25px;
+	}
+
+	.nav-list-footer .nav-item {
+		font-size: 15px;
+	}
+
+	.callMeBack-logo, .callMeBack-logo a {
+		font-size: 12px;
+	}
+
+	.feature-pic-item {
+		margin-bottom: 5px;
+	}
+
+	#day-and-night p,
+	#quality p,
+	#autopark p,
+	#convenience p {
+		padding-top: 5%;
+		font-size: 14px;
+		line-height: 14px;
+	}
+
+	.features-text-item::before {
+		top: 10%;
+		left: -3%;
+	}
+}
+ 
+/* sm (>=576 и <=767) */
+@media (min-width: 576px) and (max-width: 767px) {
+	
+	.elevators-row {
+		max-width: 740px;
+	}
+
+	.links::after {
+		display: none;
+	}
+
+	.promo-text {
+		font-size: 20px;
+		line-height: 20px;
+	}
+
+	.wrapper-elevator-list::after {
+		display: none;
+	}
+
+	.about::after {
+		display: none;
+	}
+
+	.contacts::after {
+		display: none;
+	}
+
+	.our-contacts::after {
+		display: none;
+	}
+
+	#day-and-night p,
+	#quality p,
+	#autopark p,
+	#convenience p {
+		padding-top: 5%;
+		font-size: 14px;
+		line-height: 14px;
+	}
+
+	.features-text-item::before {
+		top: 10%;
+		left: -3%;
+	}
+}
+ 
+/* md (>=768 и <=991) */
+@media (min-width: 768px) and (max-width: 991px) {
+	
+	.elevators-row {
+		max-width: 740px;
+	}
+
+	.links::after {
+		display: none;
+	}
+
+	.wrapper-elevator-list::after {
+		display: none;
+	}
+
+	.promo-text {
+		font-size: 40px;
+		line-height: 40px;
+	}
+
+	.about::after {
+		display: none;
+	}
+
+	.contacts::after {
+		display: none;
+	}
+
+	.our-contacts::after {
+		display: none;
+	}
+}
+ 
+/* lg (>=992 и <=1199) */
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+	.elevators-row {
+		max-width: 740px;
+	}
+
+	.buttons {
+		vertical-align: left;
+	}
+
+	.wrapper-elevator-list::after {
+		display: none;
+	}
+
+	.promo-text {
+		font-size: 50px;
+		line-height: 60px;
+	}
+}
